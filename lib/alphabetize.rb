@@ -25,6 +25,7 @@ def word_weight( word, esp_hash )
     counter+=1
   end
 
+  puts "#{word} #{word_total}"
   word_total
 
 end
