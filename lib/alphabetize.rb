@@ -11,6 +11,18 @@ def hash_my_esp( esp_alphabet)
   return_hash
 end
 
+def word_weight( word, esp_hash )
+
+  counter=0
+  divider=1
+  word_weighting=0.00000
+  word.length.times do
+    word_weighting+=esp_hash["esperanto"][word[counter]]/divider
+    divider=divider*10
+    counter+=1
+  end
+  
+end
 
 def alphabetize(arr)
   # code here
