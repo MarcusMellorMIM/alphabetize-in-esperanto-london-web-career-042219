@@ -11,12 +11,14 @@ def hash_my_esp( esp_alphabet)
   return_hash
 end
 
-my_esp = hash_my_esp(ESPERANTO_ALPHABET)
-
-my_array.sort_by { |l| my_esp["esperanto"][l[0]] }
-
 
 def alphabetize(arr)
   # code here
-  
+ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+
+my_esp = hash_my_esp("abcĉdefgĝhĥijĵklmnoprsŝtuŭvz")
+
+my_array.sort_by { |l| my_esp["esperanto"][l[0]] }
+
+    
 end
