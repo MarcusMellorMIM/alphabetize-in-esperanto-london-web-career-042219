@@ -14,14 +14,22 @@ end
 def word_weight( word, esp_hash )
 
   counter=0
-  divider=1
-  word_weighting=0.00000
+  divider=100000
+  letter_total=0
+  word_total=0.0
   word.length.times do
-    word_weighting+=esp_hash["esperanto"][word[counter]]/divider
-    divider=divider*10
+    letter_total = esp_hash["esperanto"][word[counter]]
+    word_total = word_total + (letter_total*divider)
+  
+    puts "#{word[counter]} #{word_total} #{esp_hash["esperanto"][word[counter]]} #{divider}"
+
+    divider=divider/10
     counter+=1
   end
-  
+
+  puts "#{word} #{word_total}"
+  word_total
+
 end
 
 def alphabetize(arr)
