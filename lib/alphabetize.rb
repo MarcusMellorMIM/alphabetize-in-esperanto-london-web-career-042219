@@ -14,11 +14,11 @@ end
 
 def alphabetize(arr)
   # code here
-ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
 my_esp = hash_my_esp("abcĉdefgĝhĥijĵklmnoprsŝtuŭvz")
 
-my_array.sort_by { |l| my_esp["esperanto"][l[0]] }
+my_array=arr.sort_by { |l| my_esp["esperanto"][l[0]] }
 
-    
+my_array 
+
 end
