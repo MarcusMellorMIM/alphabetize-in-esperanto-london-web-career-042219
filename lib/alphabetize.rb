@@ -14,14 +14,14 @@ end
 def word_weight( word, esp_hash )
 
   counter=0
-  divider=100000000
+  divider=10000000000
   letter_total=0
   word_total=0.0
   word.length.times do
     letter_total = esp_hash["esperanto"][word[counter]]+1
     word_total = word_total + (letter_total*divider)
   
-    divider=divider/30
+    divider=divider/50
     counter+=1
   end
 
