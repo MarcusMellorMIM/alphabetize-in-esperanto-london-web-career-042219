@@ -33,7 +33,7 @@ end
 def alphabetize(arr)
   # code here
 
-my_esp = hash_my_esp("abcĉdefgĝhĥijĵklmnoprsŝtuŭvz")
+my_esp = hash_my_esp(" abcĉdefgĝhĥijĵklmnoprsŝtuŭvz")
 
 #my_array=arr.sort_by { |l| my_esp["esperanto"][l[0]] }
 my_array=arr.sort_by { |word| word_weight(word,my_esp) }
