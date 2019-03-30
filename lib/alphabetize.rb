@@ -13,6 +13,7 @@ end
 
 def word_weight( word, esp_hash )
 
+#not really happy with my solution - I need to understand floats better --- also, seems a really lonmg winded method to make this work ... but work, it does.
   counter=0
   divider=1000000000000000
   letter_total=0
